@@ -108,6 +108,6 @@ public class D3Test {
   @Test
   public void fUNWELCOME() {
     driver.get("https://cs1632.appspot.com/");
-    assertThat(driver.findElement(By.cssSelector(".jumbotron > .lead")).getText(), is("Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\\n- Brian W. Kernighan"));
+    assertThat(driver.findElement(By.cssSelector(".jumbotron > .lead")).getText(), is("Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\\\\\\\n- Brian W. Kernighan"));
   }
 }

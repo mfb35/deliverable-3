@@ -22,7 +22,7 @@
         ["css=.jumbotron > .lead", "css:finder"],
         ["xpath=//main/div/p", "xpath:position"]
       ],
-      "value": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\n- Brian W. Kernighan"
+      "value": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\\\n- Brian W. Kernighan"
     }]
   }, {
     "id": "68ec6eb5-3739-40b2-ac67-5bea3f1786ac",
