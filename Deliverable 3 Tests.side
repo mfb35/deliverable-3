@@ -52,35 +52,340 @@
   }, {
     "id": "393fe2d6-8ca5-48bb-a0b4-a131af194b8b",
     "name": "FUN-FACT",
-    "commands": []
+    "commands": [{
+      "id": "8bd44de3-90ab-42bb-89de-297a9ac5bb3c",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e46ec1d6-2324-4b57-aef0-dd465e1b5914",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Factorial",
+      "targets": [
+        ["linkText=Factorial", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Factorial')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/fact')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Factorial')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc03329e-b98b-4eb5-ba7a-dea1b650b82c",
+      "comment": "",
+      "command": "click",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cd447a3-0d08-4566-8200-3d604933cb04",
+      "comment": "",
+      "command": "type",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "c7cc8c4f-eac9-4273-91f3-3dacfe102c30",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6677737-4f38-45b4-84cd-8d6925d2f12c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Factorial of 5 is 120!')]", "xpath:innerText"]
+      ],
+      "value": "Factorial of 5 is 120!"
+    }]
   }, {
     "id": "3fad6225-3ef4-40ea-9e08-4381de5c4dc9",
     "name": "FUN-FIB",
-    "commands": []
+    "commands": [{
+      "id": "d170526a-dcc8-4b85-bb1e-b93830a79012",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40ff478f-76b6-4e88-91ae-465974cd229c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fibonacci",
+      "targets": [
+        ["linkText=Fibonacci", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fibonacci')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/fib')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fibonacci')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eced8443-82cc-4051-9679-e26a9ab5fac0",
+      "comment": "",
+      "command": "click",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6308257e-9f9f-4c7e-9d3a-354fa89b35bd",
+      "comment": "",
+      "command": "type",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "572a4aab-86c3-4e71-92b2-5c8514f4386f",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d317201-50a6-4ee1-be1c-cb31751ff10a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Fibonacci of 5 is 5!')]", "xpath:innerText"]
+      ],
+      "value": "Fibonacci of 5 is 5!"
+    }]
   }, {
     "id": "5cbeecc8-c166-457a-a3b7-2bd0738ffaad",
     "name": "FUN-INVALID-VALUE",
-    "commands": []
+    "commands": [{
+      "id": "140f6564-cc92-4e75-b0d3-7558943293c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc1176c9-21db-49d3-992f-70e78a7ccd17",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fibonacci",
+      "targets": [
+        ["linkText=Fibonacci", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fibonacci')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/fib')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fibonacci')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee557101-c30c-4509-825f-9236a9003763",
+      "comment": "",
+      "command": "click",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f4d9b90-a9cb-449b-a42b-66a853a38e07",
+      "comment": "",
+      "command": "type",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-100"
+    }, {
+      "id": "850ddf2a-ff4b-4643-b756-30dc50815adf",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a176fed-574b-469f-8995-a35d6298f4ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Fibonacci of -100 is 1!')]", "xpath:innerText"]
+      ],
+      "value": "Fibonacci of -100 is 1!"
+    }]
   }, {
     "id": "a81da232-d2c1-41a8-b097-856dd4145d3a",
     "name": "FUN-HELLO",
-    "commands": []
+    "commands": [{
+      "id": "fb92594f-b311-4d73-b597-aae1f5fa6d3c",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81e6014a-412e-4992-90e4-439a478a0843",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hello",
+      "targets": [
+        ["linkText=Hello", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hello')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/hello')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hello')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73d5e475-3309-42c5-a59a-906ed10b3109",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Hello CS1632, from Dr. Ahn!')]", "xpath:innerText"]
+      ],
+      "value": "Hello CS1632, from Dr. Ahn!"
+    }]
   }, {
     "id": "28f9881c-f4d2-4cb9-a0fd-47ecbdd66f19",
     "name": "FUN-HELLO-TRAILING",
-    "commands": []
+    "commands": [{
+      "id": "9a566b72-39a9-49d9-b432-d57388430eee",
+      "comment": "",
+      "command": "open",
+      "target": "/hello/jazzy",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e9ea4c9-c790-45e7-ab86-bc6163c049e0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Hello CS1632, from jazzy!')]", "xpath:innerText"]
+      ],
+      "value": "Hello CS1632, from jazzy!"
+    }]
   }, {
     "id": "bc803418-a8e0-48e7-b55e-3fc6aecf4a3d",
     "name": "FUN-CATHY",
-    "commands": []
+    "commands": [{
+      "id": "470242b8-d208-466f-a10b-6320d668d9d1",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fb5b65c-7614-4be8-8aa6-71372d2d17c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cathedral Pics",
+      "targets": [
+        ["linkText=Cathedral Pics", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cathedral Pics')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cathy')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cathedral Pics')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f460f1e-bfe1-4290-9908-11f90285e8d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(1) > img",
+      "targets": [
+        ["css=li:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@alt='Sunny Cathedral']", "xpath:img"],
+        ["xpath=//li/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07665b6c-29c4-4760-bdf7-70b9cd106ad9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(3) > img",
+      "targets": [
+        ["css=li:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@alt='Alpenglow Cathedral']", "xpath:img"],
+        ["xpath=//li[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4ba711d-5926-4e67-bd80-4751238825fb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(5) > img",
+      "targets": [
+        ["css=li:nth-child(5) > img", "css:finder"],
+        ["xpath=//img[@alt='Old Cathedral']", "xpath:img"],
+        ["xpath=//li[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "002a3f80-1430-4712-89aa-87c5ee7ece6f",
-    "name": "Default Suite",
+    "name": "D3",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": []
+    "tests": ["bc803418-a8e0-48e7-b55e-3fc6aecf4a3d", "393fe2d6-8ca5-48bb-a0b4-a131af194b8b", "3fad6225-3ef4-40ea-9e08-4381de5c4dc9", "a81da232-d2c1-41a8-b097-856dd4145d3a", "28f9881c-f4d2-4cb9-a0fd-47ecbdd66f19", "5cbeecc8-c166-457a-a3b7-2bd0738ffaad", "68ec6eb5-3739-40b2-ac67-5bea3f1786ac", "7e020ba2-185b-4415-b66a-9eee6e6599f8"]
   }],
   "urls": ["https://cs1632.appspot.com/"],
   "plugins": []
