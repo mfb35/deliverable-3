@@ -100,10 +100,10 @@ public class D3Test {
     driver.get("https://cs1632.appspot.com/");
     {
       WebElement element = driver.findElement(By.linkText("CS1632 D3 Home"));
-      String attribute = element.getAttribute("CS1632 D3 Home");
+      String attribute = element.getAttribute("href");
       vars.put("val", attribute);
     }
-    assertEquals(vars.get("val").toString(), "/");
+    assertEquals(vars.get("val").toString(), "https://cs1632.appspot.com/");
   }
   @Test
   public void fUNWELCOME() {
