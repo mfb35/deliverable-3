@@ -38,19 +38,23 @@ public class D3Test {
   }
   @Test
   public void fUNCATHY() {
-    driver.get("https://cs1632.appspot.com/");
+    driver.get("https://cs1632.appspot.com");
     driver.findElement(By.linkText("Cathedral Pics")).click();
     {
-      List<WebElement> elements = driver.findElements(By.cssSelector("li:nth-child(1) > img"));
+      List<WebElement> elements = driver.findElements(By.cssSelector("ol > li:nth-child(1)"));
       assert(elements.size() > 0);
     }
     {
-      List<WebElement> elements = driver.findElements(By.cssSelector("li:nth-child(3) > img"));
+      List<WebElement> elements = driver.findElements(By.cssSelector("ol > li:nth-child(3)"));
       assert(elements.size() > 0);
     }
     {
-      List<WebElement> elements = driver.findElements(By.cssSelector("li:nth-child(5) > img"));
+      List<WebElement> elements = driver.findElements(By.cssSelector("ol > li:nth-child(5)"));
       assert(elements.size() > 0);
+    }
+    {
+      List<WebElement> elements = driver.findElements(By.cssSelector("ol > li:nth-child(7)"));
+      assert(elements.size() == 0);
     }
   }
   @Test
@@ -79,7 +83,7 @@ public class D3Test {
   }
   @Test
   public void fUNHELLOTRAILING() {
-    driver.get("https://cs1632.appspot.com//hello/jazzy");
+    driver.get("https://cs1632.appspot.com/hello/jazzy");
     assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Hello CS1632, from jazzy!"));
   }
   @Test
@@ -103,7 +107,7 @@ public class D3Test {
   }
   @Test
   public void fUNWELCOME() {
-    driver.get("https://cs1632.appspot.com//");
+    driver.get("https://cs1632.appspot.com/");
     assertThat(driver.findElement(By.cssSelector(".jumbotron > .lead")).getText(), is("Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\\\n- Brian W. Kernighan"));
   }
 }
