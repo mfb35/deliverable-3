@@ -111,6 +111,7 @@ public class D3Test {
     assertThat(driver.findElement(By.cssSelector(".jumbotron > .lead")).getText(), is("Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\n- Brian W. Kernighan"));
   }
   
+  //Here are the tests that fail for part 2 of the project. They are commented out for gradescope
   @Test
   public void dEFECT1FUNINVALIDVALUE() {
 	/*
