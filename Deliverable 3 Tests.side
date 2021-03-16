@@ -22,7 +22,7 @@
         ["css=.jumbotron > .lead", "css:finder"],
         ["xpath=//main/div/p", "xpath:position"]
       ],
-      "value": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\\\n- Brian W. Kernighan"
+      "value": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\\n- Brian W. Kernighan"
     }]
   }, {
     "id": "68ec6eb5-3739-40b2-ac67-5bea3f1786ac",
@@ -385,14 +385,192 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "126e4fcf-c680-46bf-8410-dbed1f1936f7",
+    "name": "DEFECT1-FUN-INVALID-VALUE",
+    "commands": [{
+      "id": "dd0aa65d-8399-45ab-bd04-e09cb7b00f19",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dce7bca-5b6d-4ece-a5f9-882d80866c87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21e7ad46-4748-4c0c-845e-6830d8793fe1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Factorial",
+      "targets": [
+        ["linkText=Factorial", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Factorial')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/fact')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Factorial')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f38086-ec42-420e-9763-b4bd9a7d8cf8",
+      "comment": "",
+      "command": "click",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42753b5d-b234-4a30-9940-a51cc4e5b25f",
+      "comment": "",
+      "command": "type",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "742aac53-6c11-4eec-b0a2-1e3dc1d5cbd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e850375-bfdf-4515-80e0-590de04ce544",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Factorial of -100 is 1!')]", "xpath:innerText"]
+      ],
+      "value": "Factorial of test is 1!"
+    }]
+  }, {
+    "id": "69b24b26-30dd-4ac0-9e33-7e32a314232a",
+    "name": "DEFECT2-FUN-HELLO-TRAILING",
+    "commands": [{
+      "id": "4ef9a752-81db-46d9-b7f6-dad7da2cfd70",
+      "comment": "",
+      "command": "open",
+      "target": "https://cs1632.appspot.com/hello/https://cs1632.appspot.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aaf0e417-0d50-4238-9d0e-9c2a9e92bf50",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Hello CS1632, from Dr. Ahn!')]", "xpath:innerText"]
+      ],
+      "value": "Hello CS1632, from https://cs1632.appspot.com!"
+    }]
+  }, {
+    "id": "303f62d1-bfac-4f75-a6f4-2e2b2da1dc2a",
+    "name": "DEFECT3-FUN-FIB",
+    "commands": [{
+      "id": "57a0add4-28a6-40f0-9efb-e10dce6f07db",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b90b6e60-e8de-43cb-8dc6-d4d6ac6b76b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "789x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5103d5b-45cf-41fe-abab-25b7f9842393",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fibonacci",
+      "targets": [
+        ["linkText=Fibonacci", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fibonacci')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/fib')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fibonacci')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b60663af-7e58-4dfe-b175-74c544844761",
+      "comment": "",
+      "command": "click",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15fe6364-e1a7-47b3-af48-04debd83f7af",
+      "comment": "",
+      "command": "type",
+      "target": "name=value",
+      "targets": [
+        ["name=value", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='value']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "b99492d6-ccba-4951-b75e-eb703ecbb634",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7061dcd2-a556-4ed0-b5e4-d00d0b44cf73",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Fibonacci of 10 is 1!')]", "xpath:innerText"]
+      ],
+      "value": "Fibonacci of 10 is 55!"
+    }]
   }],
   "suites": [{
     "id": "002a3f80-1430-4712-89aa-87c5ee7ece6f",
     "name": "D3",
     "persistSession": false,
     "parallel": false,
-    "timeout": 300,
-    "tests": ["bc803418-a8e0-48e7-b55e-3fc6aecf4a3d", "393fe2d6-8ca5-48bb-a0b4-a131af194b8b", "3fad6225-3ef4-40ea-9e08-4381de5c4dc9", "a81da232-d2c1-41a8-b097-856dd4145d3a", "28f9881c-f4d2-4cb9-a0fd-47ecbdd66f19", "5cbeecc8-c166-457a-a3b7-2bd0738ffaad", "68ec6eb5-3739-40b2-ac67-5bea3f1786ac", "7e020ba2-185b-4415-b66a-9eee6e6599f8"]
+    "timeout": 20,
+    "tests": ["bc803418-a8e0-48e7-b55e-3fc6aecf4a3d", "393fe2d6-8ca5-48bb-a0b4-a131af194b8b", "3fad6225-3ef4-40ea-9e08-4381de5c4dc9", "a81da232-d2c1-41a8-b097-856dd4145d3a", "28f9881c-f4d2-4cb9-a0fd-47ecbdd66f19", "5cbeecc8-c166-457a-a3b7-2bd0738ffaad", "68ec6eb5-3739-40b2-ac67-5bea3f1786ac", "7e020ba2-185b-4415-b66a-9eee6e6599f8", "126e4fcf-c680-46bf-8410-dbed1f1936f7", "69b24b26-30dd-4ac0-9e33-7e32a314232a", "303f62d1-bfac-4f75-a6f4-2e2b2da1dc2a"]
   }],
   "urls": ["https://cs1632.appspot.com/", "https://cs1632-buggier.appspot.com/"],
   "plugins": []

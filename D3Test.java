@@ -110,4 +110,29 @@ public class D3Test {
     driver.get("https://cs1632.appspot.com/");
     assertThat(driver.findElement(By.cssSelector(".jumbotron > .lead")).getText(), is("Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\n- Brian W. Kernighan"));
   }
+  @Test
+  public void dEFECT1FUNINVALIDVALUE() {
+    driver.get("https://cs1632.appspot.com/");
+    driver.manage().window().setSize(new Dimension(788, 824));
+    driver.findElement(By.linkText("Factorial")).click();
+    driver.findElement(By.name("value")).click();
+    driver.findElement(By.name("value")).sendKeys("test");
+    driver.findElement(By.cssSelector("input:nth-child(2)")).click();
+    assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Factorial of test is 1!"));
+  }
+  @Test
+  public void dEFECT2FUNHELLOTRAILING() {
+    driver.get("https://cs1632.appspot.com/hello/https://cs1632.appspot.com");
+    assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Hello CS1632, from https://cs1632.appspot.com!"));
+  }
+  @Test
+  public void dEFECT3FUNFIB() {
+    driver.get("https://cs1632.appspot.com/");
+    driver.manage().window().setSize(new Dimension(789, 824));
+    driver.findElement(By.linkText("Fibonacci")).click();
+    driver.findElement(By.name("value")).click();
+    driver.findElement(By.name("value")).sendKeys("10");
+    driver.findElement(By.cssSelector("input:nth-child(2)")).click();
+    assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Fibonacci of 10 is 55!"));
+  }
 }
