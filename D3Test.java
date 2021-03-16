@@ -110,6 +110,7 @@ public class D3Test {
     driver.get("https://cs1632.appspot.com/");
     assertThat(driver.findElement(By.cssSelector(".jumbotron > .lead")).getText(), is("Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.\n- Brian W. Kernighan"));
   }
+  /*
   @Test
   public void dEFECT1FUNINVALIDVALUE() {
     driver.get("https://cs1632.appspot.com/");
@@ -135,4 +136,5 @@ public class D3Test {
     driver.findElement(By.cssSelector("input:nth-child(2)")).click();
     assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Fibonacci of 10 is 55!"));
   }
+  */
 }
